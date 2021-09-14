@@ -31,7 +31,7 @@ class LocalNotificationService {
       //* make sure to add context as parameter if you are going to use this
       onSelectNotification: (String? route) async {
         if (route != null) {
-          Navigator.pushNamed(context, '/${route}');
+          Navigator.pushNamed(context, '/$route');
         }
       },
       //* this part is optional end
