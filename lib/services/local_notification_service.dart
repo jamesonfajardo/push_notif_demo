@@ -56,7 +56,7 @@ class LocalNotificationService {
           'user defined channel name',
           'user defined channel description',
           importance: Importance.max,
-          priority: Priority.high,
+          priority: Priority.max,
         ),
         iOS: IOSNotificationDetails(),
       );
