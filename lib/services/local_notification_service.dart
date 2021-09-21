@@ -17,7 +17,7 @@ class LocalNotificationService {
   // initialize local notification settings
   // if you need to route the user somewhere, you need to add a context and navigator
   static void initialize(BuildContext context) {
-    final InitializationSettings initializationSettings =
+    const InitializationSettings initializationSettings =
         InitializationSettings(
       android: AndroidInitializationSettings('@mipmap/ic_launcher'),
       iOS: IOSInitializationSettings(),
@@ -50,7 +50,7 @@ class LocalNotificationService {
       final id = DateTime.now().millisecondsSinceEpoch ~/ 1000;
 
       // configure channel settings here
-      NotificationDetails notificationDetails = NotificationDetails(
+      const NotificationDetails notificationDetails = NotificationDetails(
         android: AndroidNotificationDetails(
           'user_defined_channel_id',
           'user defined channel name',
@@ -73,7 +73,7 @@ class LocalNotificationService {
         //* this part is optional end
       );
     } catch (e) {
-      print(e);
+      // print(e);
     }
   }
 }
